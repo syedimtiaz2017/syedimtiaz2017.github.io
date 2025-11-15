@@ -26,6 +26,29 @@
             line-height: 1.6;
             text-align: center;
         }
+
+        /* Button / Link Style (Your Custom Style) */
+        .list_of_items-link {
+            color: #0066ff;            
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #000;    
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px auto;
+            transition: background-color 0.3s ease,
+                        color 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        .list_of_items-link:hover {
+            background-color: #0006a3;
+            color: #fff;
+            border-color: #000;
+        }
+
+        /* Project Layout */
         .project-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -53,27 +76,6 @@
             font-size: 16px;
             margin-bottom: 20px;
         }
-        .list_of_items-link {
-    color: #0066ff;              /* Blue text */
-    text-decoration: none;
-    font-weight: bold;
-
-    border: 2px solid #000;      /* Black border */
-    padding: 10px 20px;
-    border-radius: 5px;
-
-    transition: 
-        background-color 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease;
-}
-
-/* Hover effect */
-.list_of_items-link:hover {
-    background-color: #0006a3;   /* Darker blue on hover */
-    color: #fff;                 /* White text on hover */
-    border-color: #000;          /* Keep border black */
-}
         footer {
             background-color: #333;
             color: #fff;
@@ -85,32 +87,39 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
     </header>
-		<h2>Scroll down to see my creations.</h2>
-		
-		<a href="list_of_items.html" class="list_of_items-link">List of items in this website</a>
+
+    <h2 style="text-align:center;">Scroll down to see my creations.</h2>
+
+    <div style="text-align:center;">
+        <a href="list_of_items.html" class="list_of_items-link">List of items in this website</a>
+    </div>
+
     <main>
         <div class="project-container">
             <div class="project-box">
                 <img src="excel_comparator.png" alt="Excel Comparator" style="width: 60%;">
-
                 <h2 class="project-title">Excel Comparator</h2>
                 <p class="project-description">This tool compares two Excel files and highlights differences.</p>
-                <a href="excel_comparator.html" class="project-link">Learn More</a>
+                <a href="excel_comparator.html" class="project-link" style="color: white;">Learn More</a>
             </div>
+
             <div class="project-box">
                 <img src="about_me_image.jpg" alt="About Me">
                 <h2 class="project-title">About Me</h2>
                 <p class="project-description">I am an Aerospace Engineer specializing in airframe stress analysis and software development.</p>
-                <a href="about.html" class="project-link">Read More</a>
+                <a href="about.html" class="project-link" style="color: white;">Read More</a>
             </div>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2024 Syed Imtiaz. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
