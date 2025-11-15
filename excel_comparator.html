@@ -4,83 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample HTML Page</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
+
         h1 {
             margin-top: 40px;
             text-align: center;
         }
+
         p {
             margin: 20px;
             line-height: 1.6;
         }
+
+        /* ⭐ RESPONSIVE IMAGES (Desktop + Mobile) ⭐ */
+        img {
+            width: 100%;
+            max-width: 900px;   /* larger on desktop */
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* ⭐ MOBILE VIEW FIX */
+        @media (max-width: 768px) {
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Excel Comparator V 1.0</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-      
         </ul>
     </nav>
+
     <main>
         <section>
             <h2>About</h2>
-            <p>The Excel Comparison program automates the tedious task of identifying 
-			differences between two Excel files..</p>
+            <p>
+                The Excel Comparison program automates the tedious task of identifying 
+                differences between two Excel files.
+            </p>
         </section>
-		
+
         <section>
-		<h2>Download</h2>
-		<p>Click the <a href="https://github.com/syedimtiaz2017/syedimtiaz2017.github.io/releases/download/Software_exe/excel_comparator.exe" download>link</a> to download the file</p>
-		</section>
-		
-		<section>
+            <h2>Download</h2>
+            <p>
+                Click the 
+                <a href="https://github.com/syedimtiaz2017/syedimtiaz2017.github.io/releases/download/Software_exe/excel_comparator.exe" download>
+                    link
+                </a> 
+                to download the file.
+            </p>
+        </section>
+
+        <section>
             <h2>Features:</h2>
             <p>List all the features here with images</p>
         </section>
-		
-		<section>
-            <h2>Screenshots:</h2>
-            <p>Figure 1: GUI (Right click and open image in new tab)</p>
-			<img src="figure_1.png" alt="Figure 1: GUI when you first open." style="width: 35%;">
-			<p>Figure 2: Follw the steps in the order shown</p>
-			<img src="figure_2.png" alt="Figure 2: Steps to follow"style="width: 35%;">
-			<p>Steps to follow (Refer figure 2):</p>
-				<ol>
-					<li>Click on “Add File” > Browse and select an excel file. Repeat the process to add as many excel files as you need.</li>
-					<li>Once Excel files are added, the file names are displayed in the view box along with their file path.</li>
-					<li>From the drop down, select the excel file.</li>
-					<li>From the view box, click on the sheet that you want to compare.</li>
-					<li>Follow step 3.</li>
-					<li>Follow step 4.</li>
-					<li>Click on “Browse…” and select the directory where you want your output to be.</li>
-					<li>The output path is displayed.</li>
-					<li>“Compare Sheets” allows you to compare the differences in table format. See Figure 3.</li>
-					<li>“Compare Excels” allows you to compare the sheets and highlight the differences in excel 1 and save it as a new excel file. See Figure 4.</li>
-					<li>“Merge Excels” allows you to merge two excel files (all sheets from excel 1 and excel 2 into one common file).</li>
-					<li>Click “HELP” to view this help document.</li>
-				</ol>
 
-			<p>Figure 3: Output from “Compare Sheets” button - the table format which shows the differences in excel file 1 and excel file 2</p>
-			<img src="figure_3.png" alt="Figure 3: Compare Sheets Button."style="width: 25%;">
-			<p>Figure 4: Output from “Compare Excels” button - The differences are highlighted in yellow fill and red font colour.</p>
-			<img src="figure_4.png" alt="Figure 4: Compare Excels Button"style="width: 25%;">
+        <section>
+            <h2>Screenshots:</h2>
+
+            <p>Figure 1: GUI (Right click and open image in new tab)</p>
+            <img src="figure_1.png" alt="Figure 1: GUI when you first open.">
+
+            <p>Figure 2: Follow the steps in the order shown</p>
+            <img src="figure_2.png" alt="Figure 2: Steps to follow">
+
+            <p>Steps to follow (Refer figure 2):</p>
+            <ol>
+                <li>Click on “Add File” > Browse and select an excel file...</li>
+                <li>Once Excel files are added...</li>
+                <li>Select the Excel file...</li>
+                <li>Click on the sheet...</li>
+                <li>Follow step 3.</li>
+                <li>Follow step 4.</li>
+                <li>Select output directory...</li>
+                <li>Output path appears.</li>
+                <li>“Compare Sheets” → Table differences (Figure 3)</li>
+                <li>“Compare Excels” → Highlight differences (Figure 4)</li>
+                <li>“Merge Excels” → Merge files</li>
+                <li>Click “HELP” for the help document.</li>
+            </ol>
+
+            <p>
+                Figure 3: Output from “Compare Sheets” – table showing differences
+            </p>
+            <img src="figure_3.png" alt="Figure 3: Compare Sheets Button">
+
+            <p>
+                Figure 4: Output from “Compare Excels” – highlighted differences
+            </p>
+            <img src="figure_4.png" alt="Figure 4: Compare Excels Button">
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Syed Imtiaz. All rights reserved.</p>
     </footer>
